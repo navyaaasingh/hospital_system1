@@ -1,0 +1,22 @@
+
+# Sample Session for Hospital Appointment & Triage System
+
+add_doctor(1, "Dr. Rao", "General")
+add_slot_to_doctor(1, 101, "09:00", "09:15")
+add_slot_to_doctor(1, 102, "09:15", "09:30")
+register_patient(1, "Alice", 30)
+register_patient(2, "Bob", 45)
+register_patient(3, "Charlie", 25)
+
+# Routine bookings
+book_routine(1, 1)
+book_routine(2, 1)
+
+# Emergency
+triage_insert(3, severity=1, doctorId=1)
+
+# Serving
+serve_next()
+serve_next()
+serve_next()
+serve_next()
